@@ -1,0 +1,9 @@
+streamlit==1.62.0
+pandas==3.0.5
+openpyxl==3.1.5
+plotly==6.9.0
+reportlab==5.0.1
+pypdf==6.16.1
+SQLAlchemy==2.0.48
+psycopg[binary]==3.3.3
+pytest==9.1.1

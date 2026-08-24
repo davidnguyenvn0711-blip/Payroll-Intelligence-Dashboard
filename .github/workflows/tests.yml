@@ -1,0 +1,25 @@
+name: Kiểm thử ứng dụng
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lấy mã nguồn
+        uses: actions/checkout@v4
+      - name: Cài Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Cài thư viện
+        run: pip install -r requirements.txt
+      - name: Chạy kiểm thử
+        env:
+          APP_TEST_MODE: "1"
+        run: pytest -q
+

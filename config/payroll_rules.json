@@ -1,0 +1,31 @@
+{
+  "rules": [
+    {"name":"ot_weekday","label":"Hệ số tăng ca ngày thường","value":1.5,"unit":"hệ số","effective_from":"2021-01-01","effective_to":null,"source":"Bộ luật Lao động 2019, Điều 98","url":"https://vanban.chinhphu.vn/?docid=200562&pageid=27160","checked_at":"2026-08-22","status":"Đã xác minh","note":"Tối thiểu 150%"},
+    {"name":"ot_weekend","label":"Hệ số tăng ca ngày nghỉ hằng tuần","value":2.0,"unit":"hệ số","effective_from":"2021-01-01","effective_to":null,"source":"Bộ luật Lao động 2019, Điều 98","url":"https://vanban.chinhphu.vn/?docid=200562&pageid=27160","checked_at":"2026-08-22","status":"Đã xác minh","note":"Tối thiểu 200%"},
+    {"name":"ot_holiday","label":"Hệ số tăng ca ngày lễ, Tết","value":3.0,"unit":"hệ số","effective_from":"2021-01-01","effective_to":null,"source":"Bộ luật Lao động 2019, Điều 98","url":"https://vanban.chinhphu.vn/?docid=200562&pageid=27160","checked_at":"2026-08-22","status":"Đã xác minh","note":"Tối thiểu 300%, chưa gồm lương ngày lễ nếu hưởng lương ngày"},
+    {"name":"night_premium","label":"Phụ cấp làm ban đêm","value":0.3,"unit":"tỷ lệ","effective_from":"2021-01-01","effective_to":null,"source":"Bộ luật Lao động 2019, Điều 98","url":"https://vanban.chinhphu.vn/?docid=200562&pageid=27160","checked_at":"2026-08-22","status":"Đã xác minh","note":"Ít nhất 30%"},
+    {"name":"employee_insurance","label":"Bảo hiểm người lao động","value":0.105,"unit":"tỷ lệ","effective_from":"2026-07-01","effective_to":null,"source":"Suy ra từ bảng lương T07/2026","url":"","checked_at":"2026-08-22","status":"Chưa xác minh","note":"Cần kế toán xác nhận phạm vi BHXH, BHYT, BHTN"},
+    {"name":"employer_insurance","label":"Bảo hiểm doanh nghiệp","value":0.215,"unit":"tỷ lệ","effective_from":"2026-07-01","effective_to":null,"source":"Suy ra từ bảng lương T07/2026","url":"","checked_at":"2026-08-22","status":"Chưa xác minh","note":"Cần kế toán xác nhận phạm vi BHXH, BHYT, BHTN"},
+    {"name":"personal_deduction","label":"Giảm trừ bản thân","value":15500000,"unit":"VND/tháng","effective_from":"2026-01-01","effective_to":null,"source":"Nghị quyết 110/2025/UBTVQH15","url":"https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Nghi-quyet-110-2025-UBTVQH15-muc-giam-tru-gia-canh-thue-thu-nhap-ca-nhan-665865.aspx","checked_at":"2026-08-22","status":"Đã xác minh","note":"Áp dụng kỳ tính thuế 2026"},
+    {"name":"dependent_deduction","label":"Giảm trừ người phụ thuộc","value":6200000,"unit":"VND/người/tháng","effective_from":"2026-01-01","effective_to":null,"source":"Nghị quyết 110/2025/UBTVQH15","url":"https://thuvienphapluat.vn/van-ban/Thue-Phi-Le-Phi/Nghi-quyet-110-2025-UBTVQH15-muc-giam-tru-gia-canh-thue-thu-nhap-ca-nhan-665865.aspx","checked_at":"2026-08-22","status":"Đã xác minh","note":"Áp dụng kỳ tính thuế 2026"},
+    {"name":"rounding","label":"Quy tắc làm tròn","value":1,"unit":"VND","effective_from":"2026-01-01","effective_to":null,"source":"Cấu hình doanh nghiệp","url":"","checked_at":"2026-08-22","status":"Chưa xác minh","note":"Mặc định làm tròn đến 1 đồng"},
+    {"name":"max_daily_hours","label":"Ngưỡng giờ/ngày để cảnh báo","value":12,"unit":"giờ","effective_from":"2021-01-01","effective_to":null,"source":"Bộ luật Lao động 2019","url":"https://vanban.chinhphu.vn/?docid=200562&pageid=27160","checked_at":"2026-08-22","status":"Đã xác minh","note":"Ngưỡng validation"}
+    ,{"name":"standard_hours_per_day","label":"Số giờ làm việc chuẩn mỗi ngày","value":8,"unit":"giờ/ngày","effective_from":"2026-07-01","effective_to":null,"source":"Xác nhận của doanh nghiệp","url":"","checked_at":"2026-08-24","status":"Đã xác minh","note":"Áp dụng cho toàn bộ nhân viên"}
+    ,{"name":"standard_hours_per_month","label":"Số giờ làm việc chuẩn mỗi tháng","value":192,"unit":"giờ/tháng","effective_from":"2026-07-01","effective_to":null,"source":"Xác nhận của doanh nghiệp","url":"","checked_at":"2026-08-24","status":"Đã xác minh","note":"48 giờ/tuần nhân 4 tuần"}
+    ,{"name":"work_morning_start","label":"Giờ bắt đầu ca sáng","value":"07:30","unit":"HH:MM","effective_from":"2026-07-01","effective_to":null,"source":"Xác nhận của doanh nghiệp","url":"","checked_at":"2026-08-24","status":"Đã xác minh","note":"Không tính thời gian đến sớm"}
+    ,{"name":"work_morning_end","label":"Giờ kết thúc ca sáng","value":"11:30","unit":"HH:MM","effective_from":"2026-07-01","effective_to":null,"source":"Xác nhận của doanh nghiệp","url":"","checked_at":"2026-08-24","status":"Đã xác minh","note":"Bắt đầu nghỉ trưa"}
+    ,{"name":"work_afternoon_start","label":"Giờ bắt đầu ca chiều","value":"13:00","unit":"HH:MM","effective_from":"2026-07-01","effective_to":null,"source":"Xác nhận của doanh nghiệp","url":"","checked_at":"2026-08-24","status":"Đã xác minh","note":"Kết thúc nghỉ trưa 1 giờ 30 phút"}
+    ,{"name":"work_afternoon_end","label":"Giờ kết thúc ca chiều","value":"17:00","unit":"HH:MM","effective_from":"2026-07-01","effective_to":null,"source":"Xác nhận của doanh nghiệp","url":"","checked_at":"2026-08-24","status":"Đã xác minh","note":"Thời gian sau mốc này là tăng ca"}
+    ,{"name":"overtime_multiplier_business","label":"Hệ số tăng ca doanh nghiệp áp dụng","value":1.5,"unit":"hệ số","effective_from":"2026-07-01","effective_to":null,"source":"Xác nhận của doanh nghiệp","url":"","checked_at":"2026-08-24","status":"Đã xác minh","note":"Chỉ áp dụng cho thời gian làm việc sau 17:00"}
+    ,{"name":"overtime_salary_basis","label":"Căn cứ tính đơn giá giờ","value":"gross_pay","unit":"tên trường","effective_from":"2026-07-01","effective_to":null,"source":"Xác nhận của doanh nghiệp","url":"","checked_at":"2026-08-24","status":"Đã xác minh","note":"Tổng lương tháng của từng nhân viên chia 192 giờ"}
+  ],
+  "tax_brackets": [
+    {"from":0,"to":10000000,"rate":0.05},
+    {"from":10000000,"to":30000000,"rate":0.10},
+    {"from":30000000,"to":60000000,"rate":0.20},
+    {"from":60000000,"to":100000000,"rate":0.30},
+    {"from":100000000,"to":null,"rate":0.35}
+  ],
+  "holidays": {"2026":["2026-01-01","2026-04-27","2026-04-30","2026-05-01","2026-09-02"]},
+  "unverified_required": ["employee_insurance","employer_insurance","rounding","overtime_approval_policy","taxable_allowances","insurance_caps","regional_minimum_wage"]
+}
