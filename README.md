@@ -58,3 +58,15 @@ Xem [hướng dẫn triển khai](docs/TRIEN_KHAI_GITHUB_STREAMLIT.md) và mẫu
 ```
 
 GitHub Actions tự chạy kiểm thử sau mỗi lần push lên nhánh `main`.
+
+## English presentation version
+
+The English-only interface uses the same payroll logic, data model, charts, and visual design as the Vietnamese application. Deploy it as a second Streamlit Community Cloud app with:
+
+```text
+Repository: davidnguyenvn0711-blip/Payroll-Intelligence-Dashboard
+Branch: main
+Main file path: streamlit_app_en.py
+```
+
+The Vietnamese application continues to use `streamlit_app.py`. Both entrypoints can be deployed independently without duplicating payroll data or business rules.
